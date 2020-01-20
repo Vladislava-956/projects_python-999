@@ -1,16 +1,18 @@
 #Написать программу для сложения двух полиномов разной степени.
 #Коэффициенты полиномов­слагаемых получать случайным образом.
 import random
+
+
 def  input_list(count_elements):
     X = []
     for i in range(count_elements):
         x = random.randint(1, 9)
         X.append(x)
     return X
+
 col_simvolovF = random.randint(3, 6)
 print('col_simvolovF: ', col_simvolovF)
 f = input_list(col_simvolovF)
-#print('F' ,f)
 print('Заданы случайные коэффициенты полинома F')
 for i in range(col_simvolovF):
     print('F[' , i,'] = ' , f[i], sep=' ', end='    ')
@@ -44,4 +46,3 @@ for i in range(2, len(h)-1):
         res = str(h[i]) +'x^' + str(i)
         print('%+6s ' % res, end='+')
 print('%+6sx^%d' % (str(h[len(h)-1]), len(h)-1))
-
