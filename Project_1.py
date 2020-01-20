@@ -1,6 +1,8 @@
 #Написать программу для сложения двух полиномов разной степени.
 #Коэффициенты полиномов­слагаемых получать случайным образом.
 import random
+
+
 def  input_list(count_elements):
     X = []
     for i in range(count_elements):
@@ -49,4 +51,3 @@ for i in range(2, len(h)-1):
         res = str(h[i]) +'x^' + str(i)
         print('%+6s ' % res, end='+')
 print('%+6sx^%d' % (str(h[len(h)-1]), len(h)-1))
-
